@@ -94,8 +94,9 @@ array_of_departements_numbers = []
 array_of_departments_names = []
 hash_of_towns_names_and_emails_from_Google_Spreadsheet = Hash.new
 
-
-puts "Appuyer sur entrer pour lancer le script"
+puts "\n Bienvenue!"
+puts "\n Je suis un script qui envoie un mail type aux communes d'un département" 
+puts "\n Appuyer sur entrer pour continuer"
 a = gets
 
 #Création d'un hash avec le numéro de chaque département en clé et son nom associé en valeur
