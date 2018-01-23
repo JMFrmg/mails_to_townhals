@@ -167,7 +167,7 @@ elsif user_choice.to_i == 2
 #Il est nécessaire d'entrer des tokens d'accès à un compte google et d'avoir créé un Google Spreadsheet
 elsif user_choice.to_i == 3
 	session = GoogleDrive::Session.from_config("config.json")
-	ws = session.spreadsheet_by_key("15sHwa9hf6iYtI_FBrvOKNzA--VR_wVz9Xq3j1KcJ4qM").worksheets[0]
+	ws = session.spreadsheet_by_key("").worksheets[0]
 		
 	compteur = 1
 	hash_of_towns_names_and_emails.each do |town_name, townhal_email|
@@ -184,7 +184,7 @@ elsif user_choice.to_i == 4
 	compteur = 0
 	while compteur < hash_of_towns_names_and_emails.length
 		session = GoogleDrive::Session.from_config("config.json")
-		ws = session.spreadsheet_by_key("15sHwa9hf6iYtI_FBrvOKNzA--VR_wVz9Xq3j1KcJ4qM").worksheets[0]
+		ws = session.spreadsheet_by_key("").worksheets[0]
 		compteur += 1
 		tw_mail = ws[compteur, 2]
 		tw_mail = tw_mail.reverse
